@@ -44,14 +44,20 @@ Dibuat khusus untuk menerima query dalam bentuk dictionary, lalu melakukan penca
 
 3. CrewAI Agents
 Struktur agent digunakan untuk memisahkan tugas:
+
 a. Researcher → mengambil data dari vectorstore
+
 b. Synthesizer → merangkum dan menyusun rekomendasi ke format yang mudah dipahami
+
 Pendekatan ini membuat chatbot modular dan mudah dikembangkan.
 
 4. HuggingFace Inference API
 Dipilih karena:
+
 a. Mudah digunakan di Colab
+
 b. Mendukung model open-source
+
 c. API key dapat disimpan sebagai Colab Secret agar tidak muncul di kode
 
 ## How to Run the Project
