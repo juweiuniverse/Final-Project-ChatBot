@@ -64,3 +64,5 @@ c. API key dapat disimpan sebagai Colab Secret agar tidak muncul di kode
 7. Siapkan LLM & Custom Tool
 8. Definisikan Agent
 9. Jalankan Chatbot
+
+Link collab: https://colab.research.google.com/drive/11AR1pj5OBcS5gi0VsTfMA0ixko3R1XH3#scrollTo=tGhAjQgrRAUN
