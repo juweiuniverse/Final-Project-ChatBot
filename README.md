@@ -33,32 +33,26 @@ Karena file CSV tidak disertakan di repo GitHub ini, proyek ini hanya menyediaka
 3. Instruksi untuk mengunduh dataset dari sumber aslinya
 
 ## Design Choices
-1. FAISS Vector Store
+### FAISS Vector Store
 Dipilih karena:
-a. Efisien untuk pencarian berbasis embedding
-b. Mendukung query teks bebas
-c. Dapat bekerja dengan dataset berukuran besar
+1. Efisien untuk pencarian berbasis embedding
+2. Mendukung query teks bebas
+3. Dapat bekerja dengan dataset berukuran besar
 
-2. Retriever Tool
+### Retriever Tool
 Dibuat khusus untuk menerima query dalam bentuk dictionary, lalu melakukan pencarian data lagu yang relevan di vectorstore.
 
-3. CrewAI Agents
+### CrewAI Agents
 Struktur agent digunakan untuk memisahkan tugas:
-
-a. Researcher → mengambil data dari vectorstore
-
-b. Synthesizer → merangkum dan menyusun rekomendasi ke format yang mudah dipahami
-
+1. Researcher → mengambil data dari vectorstore
+2. Synthesizer → merangkum dan menyusun rekomendasi ke format yang mudah dipahami
 Pendekatan ini membuat chatbot modular dan mudah dikembangkan.
 
-4. HuggingFace Inference API
+### HuggingFace Inference API
 Dipilih karena:
-
-a. Mudah digunakan di Colab
-
-b. Mendukung model open-source
-
-c. API key dapat disimpan sebagai Colab Secret agar tidak muncul di kode
+1. Mudah digunakan di Colab
+2. Mendukung model open-source
+3. API key dapat disimpan sebagai Colab Secret agar tidak muncul di kode
 
 ## How to Run the Project
 1. Buka Notebook di Google Colab
